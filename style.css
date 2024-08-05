@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --ff-big-shoulders-display: "Big Shoulders Display", sans-serif;
+  --ff-lexand-deca: "Lexand Deca", sans-serif;
+}
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+body {
+  font-size: 15px;
+}
+main {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px red solid; */
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 2px blue solid;
+  width: 100%;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+img {
+  width: 30%;
+}
+h2 {
+  color: var(--very-light-gray);
+  font-family: var(--ff-big-shoulders-display);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+p {
+  color: var(--very-light-gray);
+  font-family: var(--ff-lexand-deca);
+  font-weight: 400;
+  line-height: 1.5rem;
+  width: 186px;
+}
+button {
+  border-radius: 5rem;
+  width: 60%;
+  border: none;
+  height: 3rem;
+  font-family: var(--ff-lexand-deca);
+}
+#card-1 {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+#card-1 button {
+  color: var(--bright-orange);
+}
+#card-2 {
+  background-color: var(--dark-cyan);
+}
+#card-2 button {
+  color: var(--dark-cyan);
+}
+#card-3 {
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+#card-3 button {
+  color: var(--very-dark-cyan);
+}
+@media (max-width: 428px) {
+  section {
+    flex-direction: column;
+    min-width: 40%;
+  }
+  .cards{
+    width: 100%;
+  }
+  main {
+    margin: 30px 0;
+  }
+  p{
+    width: 260px;
+  }
+  #card-1 {
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+  }
+  #card-3 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+  }
+}
