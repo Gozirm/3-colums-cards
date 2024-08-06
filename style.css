@@ -44,9 +44,6 @@ section {
   gap: 3rem;
   padding: 2rem;
 }
-img {
-  width: 30%;
-}
 h2 {
   color: var(--very-light-gray);
   font-family: var(--ff-big-shoulders-display);
